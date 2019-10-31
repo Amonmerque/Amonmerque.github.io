@@ -3,7 +3,7 @@ var VERSION = 'version_01'              // Version of the off-line cache (change
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            // Add URL you want to cache in this list.
   '/Amonmerque.github.io/',                     // If you have separate JS/CSS files,
-  '/{Amonmerque.github.io}/index.html'            // add path to those files here
+  '/Amonmerque.github.io/index.html'            // add path to those files here
 ]
 
 // Respond with cached resources
