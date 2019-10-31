@@ -16,32 +16,45 @@ React App</title>
 <noscript>
 You need to enable JavaScript to run this app.</noscript>
 <div id="test">
-<form method="post" action="whatsapp://send?phone=0640865682" id="FORM_WHATSAPP" target="new">
-</form>
-<form method="post" action="tel://0640865682" id="FORM_TEL" title="TITLE" target="new">
-</form>
-<form method="post" action="foreflightmobile://maps/search?q=KJGG+ORD+KOSH+165+16+8000" id="FORM_FOREFLIGHTMOBILE" title="TITLE" target="new">
-</form>
-<form method="post" action="airnavpro://" id="FORM_AIRNAV" title="TITLE" target="new">
-</form>
-<form method="post" action="http://maps.apple.com/?ll=" id="FORM_GEO" target="new">
-</form>
-<br>
-<button onclick='myFunction("FORM_TEL","tel://0640865682")'>
-TEL</button>
-<br>
-<button onclick='myFunction("FORM_WHATSAPP","whatsapp://send?phone=0640865682")'>
-WHATSAPP</button>
-<br>
-<button onclick='myFunction("FORM_FOREFLIGHTMOBILE","foreflightmobile://maps/search?q=KJGG+ORD+KOSH+165+16+8000")'>
-FOREFLIGHT</button>
-<br>
-<button onclick='myFunction("FORM_AIRNAV","airnavpro://")'>
-AIRNAVPRO</button>
-<br>
-<button onclick='myFunction("FORM_GEO","http://maps.apple.com/?ll=")'>
-MAPS</button>
-<br>
+    <!-- <form method="post" action="whatsapp://send?phone=0640865682" id="FORM_WHATSAPP" target="new">
+    </form>
+    <form method="post" action="tel://0640865682" id="FORM_TEL" title="TITLE" target="new">
+    </form>
+    <form method="post" action="foreflightmobile://maps/search?q=KJGG+ORD+KOSH+165+16+8000" id="FORM_FOREFLIGHTMOBILE" title="TITLE" target="new">
+    </form>
+    <form method="post" action="airnavpro://" id="FORM_AIRNAV" title="TITLE" target="new">
+    </form>
+    <form method="post" action="http://maps.apple.com/?ll=" id="FORM_GEO" target="new">
+    </form>
+    <br>
+    <button onclick='myFunction("FORM_TEL","tel://0640865682")'>
+    TEL</button>
+    <br>
+    <button onclick='myFunction("FORM_WHATSAPP","whatsapp://send?phone=0640865682")'>
+    WHATSAPP</button>
+    <br>
+    <button onclick='myFunction("FORM_FOREFLIGHTMOBILE","foreflightmobile://maps/search?q=KJGG+ORD+KOSH+165+16+8000")'>
+    FOREFLIGHT</button>
+    <br>
+    <button onclick='myFunction("FORM_AIRNAV","airnavpro://")'>
+    AIRNAVPRO</button>
+    <br>
+    <button onclick='myFunction("FORM_GEO","http://maps.apple.com/?ll=")'>
+    MAPS</button>
+    <br> -->
+    <form method="post" action="whatsapp://send?phone=0640865682" id="T1" Title="TITLE" target="new"></form>
+    <form method="post" action="whatsapp://send?phone=0640865682" id="T2" target="new"></form>
+    <form method="post" action="whatsapp://send?phone=0640865682" id="T3" target="_blank"></form>
+    <form method="post" action="whatsapp://send?phone=0640865682" id="T4" Title="TITLE"  target="new"></form>
+    <form method="post" action="whatsapp://send?phone=0640865682" id="T5" Title="TITLE"  target="_blank"></form>
+    <form method="post" action="whatsapp://send?phone=0640865682" id="T6"></form>
+    <br><button onclick='myFunction("T1","tel://0640865682")'>T1</button>
+    <br><button onclick='myFunction("T2","tel://0640865682")'>T2</button>
+    <br><button onclick='myFunction("T3","tel://0640865682")'>T3</button>
+    <br><button onclick='myFunction("T4","tel://0640865682")'>T4</button>
+    <br><button onclick='myFunction("T5","tel://0640865682")'>T5</button>
+    <br><button onclick='myFunction("T6","tel://0640865682")'>T6</button>
+    
 </div>
 <div id="root">
 </div>
@@ -55,7 +68,6 @@ function endOfLoading()
     setTimeout(function(){
     document.getElementById("FORM_WHATSAPP").submit()
     }, 15000);
-
 }
 </script>
 <script>
