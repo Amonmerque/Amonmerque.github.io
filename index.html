@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <link rel="canonical" href="https://{guthub_username}.github.io/{repository}/" />
+    <style type="text/css">
+    /* --- application CSS here --- */
+    *{
+      background-color: #F5F4F0;
+      font-family: Georgia, serif;
+    }
+    </style>
+</head>
+<body>
+  <h1>Content</h1>
+  <script>
+  // register ServiceWorker, remember to use absolute path!
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/{repository}/sw.js', {scope: '/{repository}/'})
+  }
+  
+  // --- Application code here ---
+  </script>
+</body>
+</html>
