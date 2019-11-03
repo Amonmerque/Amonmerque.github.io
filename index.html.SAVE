@@ -16,46 +16,32 @@ React App</title>
 <noscript>
 You need to enable JavaScript to run this app.</noscript>
 <div id="test">
-    <!-- <form method="post" action="whatsapp://send?phone=0640865682" id="FORM_WHATSAPP" target="new">
-    </form>
-    <form method="post" action="tel://0640865682" id="FORM_TEL" title="TITLE" target="new">
-    </form>
-    <form method="post" action="foreflightmobile://maps/search?q=KJGG+ORD+KOSH+165+16+8000" id="FORM_FOREFLIGHTMOBILE" title="TITLE" target="new">
-    </form>
-    <form method="post" action="airnavpro://" id="FORM_AIRNAV" title="TITLE" target="new">
-    </form>
-    <form method="post" action="http://maps.apple.com/?ll=" id="FORM_GEO" target="new">
-    </form>
-    <br>
-    <button onclick='myFunction("FORM_TEL","tel://0640865682")'>
-    TEL</button>
-    <br>
-    <button onclick='myFunction("FORM_WHATSAPP","whatsapp://send?phone=0640865682")'>
-    WHATSAPP</button>
-    <br>
-    <button onclick='myFunction("FORM_FOREFLIGHTMOBILE","foreflightmobile://maps/search?q=KJGG+ORD+KOSH+165+16+8000")'>
-    FOREFLIGHT</button>
-    <br>
-    <button onclick='myFunction("FORM_AIRNAV","airnavpro://")'>
-    AIRNAVPRO</button>
-    <br>
-    <button onclick='myFunction("FORM_GEO","http://maps.apple.com/?ll=")'>
-    MAPS</button>
-    <br> -->
-    <form method="post" action="whatsapp://send?phone=0640865682" id="T1" Title="TITLE" target="new"></form>
-    <form method="post" action="whatsapp://send?phone=0640865682" id="T2" target="new"></form>
-    <form method="post" action="whatsapp://send?phone=0640865682" id="T3" target="_blank"></form>
-    <form method="post" action="whatsapp://send?phone=0640865682" id="T4" Title="TITLE"  target="new"></form>
-    <form method="post" action="whatsapp://send?phone=0640865682" id="T5" Title="TITLE"  target="_blank"></form>
-    <form method="post" action="whatsapp://send?phone=0640865682" id="T6"></form>
-    <br><button onclick='myFunction("T1","tel://0640865682")'>T1</button>
-    <br><button onclick='myFunction("T2","tel://0640865682")'>T2</button>
-    <br><button onclick='myFunction("T3","tel://0640865682")'>T3</button>
-    <br><button onclick='myFunction("T4","tel://0640865682")'>T4</button>
-    <br><button onclick='myFunction("T5","tel://0640865682")'>T5</button>
-    <br><button onclick='myFunction("T6","tel://0640865682")'>T6</button>
-    <br><a href="whatsapp://send?phone=0640865682"  target="_blank">Le site</a>
-    
+<form method="post" action="whatsapp://send?phone=0640865682" id="FORM_WHATSAPP" target="new">
+</form>
+<form method="post" action="tel://0640865682" id="FORM_TEL" title="TITLE" target="new">
+</form>
+<form method="post" action="foreflightmobile://maps/search?q=KJGG+ORD+KOSH+165+16+8000" id="FORM_FOREFLIGHTMOBILE" title="TITLE" target="new">
+</form>
+<form method="post" action="airnavpro://" id="FORM_AIRNAV" title="TITLE" target="new">
+</form>
+<form method="post" action="http://maps.apple.com/?ll=" id="FORM_GEO" target="new">
+</form>
+<br>
+<button onclick='myFunction("FORM_TEL","tel://0640865682")'>
+TEL</button>
+<br>
+<button onclick='myFunction("FORM_WHATSAPP","whatsapp://send?phone=0640865682")'>
+WHATSAPP</button>
+<br>
+<button onclick='myFunction("FORM_FOREFLIGHTMOBILE","foreflightmobile://maps/search?q=KJGG+ORD+KOSH+165+16+8000")'>
+FOREFLIGHT</button>
+<br>
+<button onclick='myFunction("FORM_AIRNAV","airnavpro://")'>
+AIRNAVPRO</button>
+<br>
+<button onclick='myFunction("FORM_GEO","http://maps.apple.com/?ll=")'>
+MAPS</button>
+<br>
 </div>
 <div id="root">
 </div>
@@ -64,13 +50,7 @@ function myFunction(n,t){document.getElementById(n).submit(),window.reload()}</s
 <script>
 "serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js").then(function(){console.log("Service Worker Registered")})</script>
 <script>
-function endOfLoading()
-{
-    setTimeout(function(){
-    document.getElementById("FORM_WHATSAPP").submit()
-    }, 2000);
-}
-</script>
+function endOfLoading(){sleep(5e3),alert("Opening ForeFlight"),document.getElementById("FORM_FOREFLIGHTMOBILE").submit(),sleep(5e3),alert("Opening AIRNAVPRO"),document.getElementById("FORM_AIRNAV").submit()}</script>
 <script>
 !function(f){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],i=0,l=[];i<n.length;i++)r=n[i],Object.prototype.hasOwnProperty.call(p,r)&&p[r]&&l.push(p[r][0]),p[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(f[t]=o[t]);for(s&&s(e);l.length;)l.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==p[u]&&(n=!1)}n&&(c.splice(t--,1),e=i(i.s=r[0]))}return e}var r={},p={1:0},c=[];function i(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return f[e].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.m=f,i.c=r,i.d=function(e,t,r){i.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(t,e){if(1&e&&(t=i(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(i.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var n in t)i.d(r,n,function(e){return t[e]}.bind(null,n));return r},i.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(t,"a",t),t},i.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},i.p="/";var t=this.webpackJsonpinteg=this.webpackJsonpinteg||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script>
 <script src="/static/js/2.a17f861f.chunk.js">
